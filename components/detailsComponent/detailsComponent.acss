@@ -1,0 +1,22 @@
+.container-main-details {
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  border-bottom:thin solid gray;
+  padding:20px 0px 20px 0px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container-main-details > button image {
+  width: 36px;
+  height: 36px;
+}
+
+.container-main-details button {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,11 @@
+<view class="container-main-search">
+  <view>
+    <text>Find Moviews and more</text>
+  </view>
+  <view>
+    <view>
+      <image mode="scaleToFill" src="/assest/search-g.png" />
+      <input placeholder="End Game" type="text" placeholder-style="color:gray" onInput="handleInputText"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "card-component":"/components/cardMovie/cardMovie"
+  },
+  "styleIsolation": "apply-shared"
+}

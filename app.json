@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/favorites/favorites"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

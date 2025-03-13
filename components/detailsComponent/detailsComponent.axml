@@ -1,0 +1,26 @@
+<view class="container-main-details" style="" a:if="{{ order == 1 }}">
+  <view>
+    <text style="font-size:30px;font-weight:600">{{title}}</text>
+    <view style="display:flex;align-items:center;gap:20px">
+      <info-component haveImage="{{true}}" urlImage="/assest/star.png" textMain="{{vote_average}}"></info-component>
+      <info-component haveImage="{{true}}" urlImage="/assest/time.png" textMain="{{time}} min"></info-component>
+    </view>
+  </view>
+  <button onTap="handleAddFavorite">
+    <image mode="scaleToFill" src="/assest/heart-complet.png" a:if="{{ favorites }}"/>
+    <image mode="scaleToFill" src="/assest/heart-conto.png" a:else/>
+  </button>
+</view>
+
+<view class="container-main-details" a:if="{{ order == 2 }}">
+  <view style="display:flex;gap:20px;flex-direction:column">
+    <info-component textMain="Fecha De Lanzamiento" textSecondary="{{release_date}}"></info-component>
+    <info-component textMain="Genero" textSecondary="99 min"></info-component>
+  </view>
+</view>
+
+<view class="container-main-details" a:if="{{ order == 3 }}">
+  <view style="display:flex;align-items:center;gap:20px">
+    <info-component textMain="Resumen" textSecondary="{{overview}}"></info-component>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "details-component":"/components/detailsComponent/detailsComponent"
+  },
+  "styleIsolation": "apply-shared"
+}

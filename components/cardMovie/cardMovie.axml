@@ -1,0 +1,12 @@
+<button class="container-main-card" data-id="{{movie.id}}" data-type="{{type}}" onTap="handleDetails">
+  <view class="container-image-movie">
+    <image mode="scaleToFill" src="https://image.tmdb.org/t/p/original{{movie.poster_path}}" onLoad="handleWidthImage"/>
+    <view>
+      <text>{{movie.title || movie.name}}</text>
+      <view>
+        <image mode="scaleToFill" src="/assest/star.png" />
+        <text>{{movie.vote_average}}</text>
+      </view>
+    </view>
+  </view>
+</button>

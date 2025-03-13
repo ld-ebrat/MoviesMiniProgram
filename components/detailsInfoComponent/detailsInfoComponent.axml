@@ -1,0 +1,9 @@
+<view class="container-info-component" style="align-items:center" a:if="{{ haveImage }}">
+  <image mode="scaleToFill" src="{{urlImage}}"/>
+  <text class="textSecondary">{{textMain}}</text>
+</view>
+
+<view class="container-info-component" style="flex-direction:column" a:else>
+  <text class="textMain">{{textMain}}</text>
+  <text class="textSecondary">{{textSecondary}}</text>
+</view>

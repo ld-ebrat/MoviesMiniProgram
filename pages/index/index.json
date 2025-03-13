@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "seach-component":"/components/search/search",
+    "card-component":"/components/cardMovie/cardMovie"
+  }
+}

@@ -1,0 +1,8 @@
+<view style="width:100%; padding:20px;box-sizing:border-box">
+  <text style="font-size:30px; font-weight:600; color:#f6f6f7">Favorites</text>
+  <scroll-view style="width:100%;margin:25px 0px; grid-column-gap:20px;grid-row-gap:15px;display:grid;grid-template-columns: 1fr 1fr">
+    <view a:for="{{ movies }}" a:for-index="index" a:for-item="movie">
+      <card-component onHandleDetails="onHandleDetails" movie="{{movie}}" type="{{favorites[movie.id].type}}"></card-component>
+    </view>
+  </scroll-view>
+</view>
