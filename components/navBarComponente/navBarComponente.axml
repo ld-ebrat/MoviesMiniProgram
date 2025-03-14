@@ -1,0 +1,10 @@
+<view class="container-navbar" style="padding-bottom:{{isDisableScroll ? 0 : safeAreaBotton}}px">
+  <view class="navbar">
+    <button size="default" type="primary" class="buttonHome" onTap="onNavigate">
+      <image mode="scaleToFill" class="imageHome" src={{srcHome}} />
+    </button>
+    <button size="default" type="primary" class="buttonCar" onTap="navigateToCar">
+      <image mode="scaleToFill" class="imageCar" src={{srcCar}} />
+    </button>
+  </view>
+</view>

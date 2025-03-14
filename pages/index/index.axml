@@ -1,4 +1,4 @@
-<view style="width:100%; padding:20px;box-sizing:border-box">
+<view style="width:100%; padding:20px 20px 100px 20px;box-sizing:border-box;align-items:center;display:flex;flex-direction:column">
   <seach-component onHandleSearch="onHandleSearch" onHandleFavorite="onHandleFavorite"></seach-component>
   <scroll-view style="width:100%;margin:25px 0px; grid-column-gap:20px;grid-row-gap:15px;display:grid;grid-template-columns: 1fr 1fr">
     <view a:for="{{ movies }}" a:for-index="index" a:for-item="movie">
@@ -6,4 +6,5 @@
     </view>
   </scroll-view>
   <pagination-component onNextPagination="onNextPagination" onPrevPagination="onPrevPagination"></pagination-component>
+  <navbar-component></navbar-component>
 </view>

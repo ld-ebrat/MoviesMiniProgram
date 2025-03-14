@@ -2,6 +2,7 @@
   "usingComponents": {
     "seach-component":"/components/search/search",
     "card-component":"/components/cardMovie/cardMovie",
-    "pagination-component":"/components/pagination/pagination"
+    "pagination-component":"/components/pagination/pagination",
+    "navbar-component":"/components/navBarComponente/navBarComponente"
   }
 }

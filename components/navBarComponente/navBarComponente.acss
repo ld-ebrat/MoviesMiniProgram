@@ -1,0 +1,70 @@
+.container-navbar {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  justify-content: center;
+  background-color: #15141f;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #15141f;
+  display: flex;
+  width: 80%;
+  height: fit-content;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0px 20px;
+  gap: 15px;
+}
+
+.buttonHome {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.buttonCar {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.buttonUser {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+.imageUser {
+  width: 36px;
+  height: 36px;
+}
+
+.imageHome {
+  width: 36px;
+  height: 36px;
+}
+
+.imageCar {
+  width: 36px;
+  height: 36px;
+}
