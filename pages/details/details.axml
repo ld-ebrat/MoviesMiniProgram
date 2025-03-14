@@ -19,7 +19,7 @@
       onHandleDeleteFavorite="onHandleDeleteFavorite"
     >
     </details-component>
-    <details-component order="2" release_date="{{movie.release_date || movie.first_air_date}}">
+    <details-component order="2" genres="{{movie.genres}}" release_date="{{movie.release_date || movie.first_air_date}}">
     </details-component>
     <details-component order="3" overview="{{movie.overview}}"></details-component>
   </view>

@@ -1,0 +1,6 @@
+<view>
+  <view style="display:flex;justify-content:center;align-items:center;gap:20px">
+   <button size="default" type="primary" style="display:flex;align-items:center;background-color:transparent;border:thin solid #f6f6f7; width:fit-content; padding:5px 10px;border-radius:10px" onTap="prevPagination"><</button> 
+   <button size="default" type="primary" style="display:flex;align-items:center;background-color:transparent;border:thin solid #f6f6f7; width:fit-content; padding:5px 10px;border-radius:10px" onTap="nextPagination">></button>
+  </view>
+</view>

@@ -15,7 +15,7 @@
 <view class="container-main-details" a:if="{{ order == 2 }}">
   <view style="display:flex;gap:20px;flex-direction:column">
     <info-component textMain="Fecha De Lanzamiento" textSecondary="{{release_date}}"></info-component>
-    <info-component textMain="Genero" textSecondary="99 min"></info-component>
+    <info-component textMain="Genero" textSecondary="99 min" genres="{{genres}}" isGenre="{{true}}"></info-component>
   </view>
 </view>
 

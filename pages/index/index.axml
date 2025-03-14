@@ -1,15 +1,9 @@
 <view style="width:100%; padding:20px;box-sizing:border-box">
-  <seach-component onHandleSearch="onHandleSearch"></seach-component>
+  <seach-component onHandleSearch="onHandleSearch" onHandleFavorite="onHandleFavorite"></seach-component>
   <scroll-view style="width:100%;margin:25px 0px; grid-column-gap:20px;grid-row-gap:15px;display:grid;grid-template-columns: 1fr 1fr">
     <view a:for="{{ movies }}" a:for-index="index" a:for-item="movie">
       <card-component movie="{{movie}}" type="{{movie.media_type}}"onHandleDetails="onHandleDetails" ></card-component>
     </view>
   </scroll-view>
+  <pagination-component onNextPagination="onNextPagination" onPrevPagination="onPrevPagination"></pagination-component>
 </view>
-
-<!-- 
-  <view style="width:100%;margin:25px 0px; grid-column-gap:20px;display:grid;grid-template-columns: 1fr 1fr">
-    <card-component></card-component>
-    <card-component></card-component>
-  </view>
--->

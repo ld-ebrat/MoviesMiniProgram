@@ -5,5 +5,8 @@
 
 <view class="container-info-component" style="flex-direction:column" a:else>
   <text class="textMain">{{textMain}}</text>
-  <text class="textSecondary">{{textSecondary}}</text>
+  <view a:if="{{ isGenre }}" style="display:flex; gap:10px;flex-wrap:wrap">
+    <text class="textSecondary" a:for="{{ genres }}" a:for-item="genre" style="border:thin solid gray; border-radius:20px; padding:2px 5px">{{genre.name}}</text>
+  </view>
+  <text class="textSecondary" a:else>{{textSecondary}}</text>
 </view>

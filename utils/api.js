@@ -1,3 +1,9 @@
+/**
+ * Realiza una petición GET a la API para obtener contenido en tendencia.
+ * @async
+ * @param {string} url - La URL de la API para obtener los datos.
+ * @returns {Promise<Object>} - Promesa que devuelve array de peliculas.
+ */
 const getAllTrending = async (url)=>{
 
   const response = await my.request({
@@ -12,6 +18,12 @@ const getAllTrending = async (url)=>{
   return response
 }
 
+/**
+ * Realiza una petición GET a la API para buscar películas.
+ * @async
+ * @param {string} url - La URL de la API con los parámetros de búsqueda.
+ * @returns {Promise<Object>} - Promesa que devuelve array de peliculas.
+ */
 const searchMovies = async (url)=>{
   const response = await my.request({
     url: url,

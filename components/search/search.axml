@@ -1,6 +1,9 @@
 <view class="container-main-search">
-  <view>
+  <view style="display:flex; justify-content:space-between; align-items:center">
     <text>Find Moviews and more</text>
+    <button size="default" type="primary" onTap="handleFavorite">
+      <image mode="scaleToFill" src="/assest/heart-complet.png" />
+    </button>
   </view>
   <view>
     <view>

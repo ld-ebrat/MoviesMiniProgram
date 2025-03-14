@@ -5,7 +5,8 @@ Component({
     inputValue:""
   },
   props: {
-    onHandleSearch:()=>{}
+    onHandleSearch:()=>{},
+    onHandleFavorite:()=>{}
   },
   didMount() {},
   didUpdate() {},
@@ -18,5 +19,9 @@ Component({
 
       this.props.onHandleSearch(this.data.inputValue)
     },
+
+    handleFavorite(){
+      this.props.onHandleFavorite()
+    }
   },
 });

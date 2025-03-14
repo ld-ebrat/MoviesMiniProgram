@@ -9,6 +9,7 @@ Component({
     release_date:"",
     overview:"",
     favorites:false,
+    genres:[],
     onHandleAddFavorite:()=>{},
     onHandleDeleteFavorite:()=>{}
   },

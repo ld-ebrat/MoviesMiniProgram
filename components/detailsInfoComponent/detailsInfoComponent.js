@@ -5,7 +5,9 @@ Component({
     textMain:"",
     textSecondary:"",
     haveImage:false,
-    urlImage:""
+    urlImage:"",
+    isGenre:false,
+    genres:[]
   },
   didMount() {},
   didUpdate() {},

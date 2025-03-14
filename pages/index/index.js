@@ -3,11 +3,11 @@ import { searchMovies } from "/utils/api";
 Page({
   data: {
     movies:[],
+    pagination:1
   },
 
   //Mostrar Detalles de la Pelicula Seleccionada
   onHandleDetails(id,type){
-    console.log(id)
     my.navigateTo({
       url:`/pages/details/details?id=${id}&type=${type}`
     })
@@ -29,9 +29,38 @@ Page({
       })
     }
   },
+
+  onHandleFavorite(){
+    my.navigateTo({
+      url:"/pages/favorites/favorites"
+    })
+  },
+
+  onNextPagination(){
+    getAllTrending(`https://api.themoviedb.org/3/trending/all/day?language=en-US&page=${this.data.pagination+1}`)
+    .then(res =>{
+      this.setData({
+        movies:res.data.results,
+        pagination:this.data.pagination+1
+      })
+      console.log(res)
+    })
+  },
+  onPrevPagination(){
+    if(this.data.pagination != 1){
+      getAllTrending(`https://api.themoviedb.org/3/trending/all/day?language=en-US&page=${this.data.pagination-1}`)
+      .then(res =>{
+        this.setData({
+          movies:res.data.results,
+          pagination:this.data.pagination-1
+        })
+        console.log(res)
+      })
+    }
+  },
   //Cargar Peliculas al Cargar La Pagina
   onLoad(query) {
-    getAllTrending("https://api.themoviedb.org/3/trending/all/day?language=en-US&page=1")
+    getAllTrending(`https://api.themoviedb.org/3/trending/all/day?language=en-US&page=${this.data.pagination}`)
     .then(res =>{
       this.setData({
         movies:res.data.results
